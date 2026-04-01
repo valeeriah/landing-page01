@@ -1,0 +1,39 @@
+/* Limpieza y fuentes */
+body {
+  background: #f8f9fa;
+  color: #212529;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* Efecto en las Tarjetas (Lo que te gustó) */
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: none !important; /* Quita el borde feo de Bootstrap */
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Flota hacia arriba */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Títulos y Botones */
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0.85rem 1.5rem rgba(13, 110, 253, 0.16);
+}
+
+.navbar-brand {
+  letter-spacing: 0.08em;
+}
+
+/* Footer elegante */
+footer {
+  font-size: 0.95rem;
+}

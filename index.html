@@ -1,73 +1,81 @@
-Set-Location "c:\Users\gisel\OneDrive\Documentos\landing-page"; @'
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page ValpoAsk</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Header en mi codigo encabeza el nombre de mi página web--> 
-    <header>
-      <div class="brand">
-        <a href="#">Servicios ValpoAsk</a>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">ValpoAsk</a>
+        <div class="navbar-nav ms-auto flex-row gap-3">
+          <a class="nav-link" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#servicios">Servicios</a>
+          <a class="nav-link" href="#beneficios">Nosotros</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </div>
       </div>
-      <!-- La etiqueta nav la utilizo para crear un menú de navegación que permita al usuario navegar entre 
-       los distintos apartados de la pagina-->
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#beneficios">Sobre Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
     </header>
 
-    <!-- la etiqueta de main la utilizo para crear la cara de la página en donde se presenta la informacion de la empresa y sus servicios -->
     <main>
-      <section id="inicio" class="hero">
-        <h1>Bienvenido a ValpoAsk </h1>
-        <p>Empresa dedicada al desarrollo de soluciones informáticas para pequeñas y medianas empresas.</p>
-        <p> 
-          Ofrecemos software y servicios tecnológicos que ayudan a optimizar procesos, mejorar la gestión de información y facilitar la digitalización de los negocios.
-        </p>
-        <a href="#contacto" class="cta">Empieza ahora</a>
+      <section id="inicio" class="hero py-5 text-center bg-light border-bottom">
+        <div class="container py-5">
+          <h1 class="display-4 fw-bold text-primary">Bienvenido a ValpoAsk</h1>
+          <p class="lead text-secondary">Soluciones informáticas para pequeñas y medianas empresas.</p>
+          <p class="mx-auto" style="max-width: 700px;">
+            Ofrecemos software y servicios tecnológicos que ayudan a optimizar procesos, mejorar la gestión de información y facilitar la digitalización.
+          </p>
+          <a href="#contacto" class="btn btn-primary btn-lg px-5 shadow-sm mt-3">Empieza ahora</a>
+        </div>
       </section>
 
-      <section id="servicios">
-        <h2>Qué ofrecemos</h2>
-        <article>
-          <h3>Desarrollo de software a medida</h3>
-          <p> Creación de sistemas personalizados para gestionar ventas, inventario, clientes o procesos internos según las necesidades de cada empresa..</p>
-        </article>
-        <article>
-          <h3>Implementación de Sistemas de Gestión </h3>
-          <p>nstalación y configuración de plataformas digitales que permiten organizar información, controlar operaciones y mejorar la administración del negocio..</p>
-        </article>
-        <article>
-          <h3>Soporte Técnico y Mantenimiento </h3>
-          <p>Asistencia técnica, actualización de sistemas y solución de problemas informáticos para asegurar el correcto funcionamiento de las herramientas digitales.</p>
-        </article>
+      <section id="servicios" class="container py-5">
+        <h2 class="text-center mb-5 fw-bold">Qué ofrecemos</h2>
+        <div class="row g-4">
+          <article class="col-md-4">
+            <div class="card h-100 p-4 shadow-sm">
+              <h3 class="h5 fw-bold text-primary">Desarrollo de software</h3>
+              <p class="text-muted small">Sistemas personalizados para gestionar ventas e inventario según tus necesidades.</p>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="card h-100 p-4 shadow-sm">
+              <h3 class="h5 fw-bold text-primary">Gestión Digital</h3>
+              <p class="text-muted small">Plataformas para organizar información y mejorar la administración del negocio.</p>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="card h-100 p-4 shadow-sm">
+              <h3 class="h5 fw-bold text-primary">Soporte Técnico</h3>
+              <p class="text-muted small">Asistencia técnica y actualización de sistemas para asegurar tus herramientas.</p>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <section id="beneficios">
-        <h2>Beneficios</h2>
-        <ul>
-         <li>Optimización de procesos empresariales</li>
-         <li>Ahorro de tiempo mediante la automatización de tareas</li>
-         <li>Mejor control y organización de la información</li>
-        <li>Mayor eficiencia y productividad en el negocio</li>
-        </ul>
+      <section id="beneficios" class="bg-light py-5">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-4">Beneficios</h2>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+             <span class="badge bg-white text-primary p-3 shadow-sm border">Optimización</span>
+             <span class="badge bg-white text-primary p-3 shadow-sm border">Ahorro de tiempo</span>
+             <span class="badge bg-white text-primary p-3 shadow-sm border">Control Total</span>
+             <span class="badge bg-white text-primary p-3 shadow-sm border">Productividad</span>
+          </div>
+        </div>
       </section>
     </main>
-<!-- footer se utiliza para crear el pie de la pagina, en mi caso la utilicé para poner reserva de derechos e informacion
- de contacto --> 
-    <footer>
-      <p>&copy; 2026 Mi Marca. Todos los derechos reservados.</p>
-      <p><a href="#contacto">Contáctanos</a></p>
+
+    <footer class="bg-dark text-white text-center py-5">
+      <div class="container">
+        <p class="mb-1">&copy; 2026 ValpoAsk. Todos los derechos reservados.</p>
+        <p><a href="#contacto" class="text-info text-decoration-none">Contáctanos</a></p>
+      </div>
     </footer>
-  </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-'@ | Set-Content -Encoding UTF8 index.html
